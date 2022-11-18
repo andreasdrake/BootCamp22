@@ -21,3 +21,5 @@
 /.vs/VSWorkspaceState.json
 /.vs/BootCamp22/v17/.wsuo
 /Hackerservice/HackerService.Krypto/bin/Debug/net6.0
+/Hackerservice/HackerService.Api.Tests/bin/Debug/net6.0
+/Hackerservice/HackerService.Api.Tests/obj
