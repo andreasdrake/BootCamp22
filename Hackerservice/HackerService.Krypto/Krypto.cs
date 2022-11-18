@@ -1,19 +1,29 @@
 ﻿using System.Text;
+using HackerService.Krypto.Exceptions;
 
-namespace HackerService.Krypto
+namespace HackerService.Krypto;
+
+public class Krypto : IKrypto
 {
-    public class Krypto : IKrypto
+    public string Decrypt(string value)
     {
-        public string Decrypt(string value)
+        if (string.IsNullOrWhiteSpace(value))
         {
-            var base64EncodedBytes = Convert.FromBase64String(value);
-            return Encoding.UTF8.GetString(base64EncodedBytes);
+            throw new KryptoValidationException();    
         }
 
-        public string Encrypt(string value)
+        var base64EncodedBytes = Convert.FromBase64String(value);
+        return Encoding.UTF8.GetString(base64EncodedBytes);
+    }
+
+    public string Encrypt(string value)
+    {
+        if (value == null)
         {
-            var textBytes = Encoding.UTF8.GetBytes(value);
-            return Convert.ToBase64String(textBytes, Base64FormattingOptions.InsertLineBreaks);
+            throw new KryptoValidationException();
         }
+
+        var textBytes = Encoding.UTF8.GetBytes(value);
+        return Convert.ToBase64String(textBytes, Base64FormattingOptions.InsertLineBreaks);
     }
 }
