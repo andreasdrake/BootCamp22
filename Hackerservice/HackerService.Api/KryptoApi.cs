@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Linq;
 
 namespace HackerService.Api;
 
@@ -15,11 +14,10 @@ public static class KryptoApi
 
         return routes;
     }
-
+     
     public static IResult Encrypt([FromBody]string value)
     {
         throw new NotImplementedException();
-        
     }
 
     public static IResult Decrypt([FromBody] string value)

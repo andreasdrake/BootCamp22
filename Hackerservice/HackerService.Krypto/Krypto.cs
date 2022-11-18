@@ -1,12 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HackerService.Krypto
+﻿namespace HackerService.Krypto
 {
-    internal class Krypto:IKrypto
+    public class Krypto : IKrypto
     {
+        public string Decrypt(string value)
+        {
+            throw new NotImplementedException();
+        }
+
+        public string Encrypt(string value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
