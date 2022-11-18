@@ -49,7 +49,7 @@ public class KryptoApiTests
     }
 
     [Fact]
-    public void Decrypt_Should_Call_Encrypt_With_Correct_Data()
+    public void Decrypt_Should_Call_Decrypt_With_Correct_Data()
     {
         // Arrange
         var request = _fixture.Create<DecryptRequest>();
@@ -58,7 +58,7 @@ public class KryptoApiTests
         KryptoApi.Decrypt(request, _decryptValidatorMock, _kryptoMock);
 
         // Assert
-        _kryptoMock.Received(1).Encrypt(request.Value);
+        _kryptoMock.Received(1).Decrypt(request.Value);
     }
 
     //TODO: add more test for bad request, ok result etc..
