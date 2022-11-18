@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Hackerservice/HackerService.Api/bin/Debug/net6.0
+/Hackerservice/HackerService.Api/obj
+/Hackerservice/HackerService.Krypto/obj
