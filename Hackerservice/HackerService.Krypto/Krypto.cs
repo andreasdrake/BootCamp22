@@ -18,7 +18,7 @@ public class Krypto : IKrypto
 
     public string Encrypt(string value)
     {
-        if (value == null)
+        if (string.IsNullOrEmpty(value))
         {
             throw new KryptoValidationException();
         }

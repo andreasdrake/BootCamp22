@@ -2,11 +2,19 @@ namespace HackerService.UnitTests;
 
 public class KryptoTests
 {
-    IKrypto _sut;
+    readonly IKrypto _sut;
 
     public KryptoTests()
     {
         _sut = new Krypto.Krypto();
+    }
+
+    [Theory]
+    [InlineData(null!)]
+    [InlineData("")]
+    public void Encrypt_ShouldThrowCorrectException_WhenInputIsInvalid(string value)
+    {
+        Assert.Throws<KryptoValidationException>(() => _sut.Encrypt(value));
     }
 
     [Theory]
@@ -17,6 +25,15 @@ public class KryptoTests
         var actualValue = _sut.Encrypt(value);
 
         Assert.Equal(expectedValue, actualValue);
+    }
+
+    [Theory]
+    [InlineData(null!)]
+    [InlineData("")]
+    [InlineData(" ")]
+    public void Decrypt_ShouldThrowCorrectException_WhenInputIsInvali(string value)
+    {
+        Assert.Throws<KryptoValidationException>(() => _sut.Decrypt(value));
     }
 
     [Theory]
