@@ -15,6 +15,11 @@ public static class KryptoApi
         routes.MapPost("/decrypt", Decrypt)
             .WithName("Decrypt");
 
+        routes.MapPost("/error", () => {
+            return Results.Problem("An error occurred.", statusCode: 500);
+            //TODO: Add logging;
+            }).ExcludeFromDescription();
+
         return routes;
     }
 

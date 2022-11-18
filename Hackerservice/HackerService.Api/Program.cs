@@ -1,6 +1,5 @@
 using HackerService.Api;
 using HackerService.Api.Configuration;
-using HackerService.Api.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +11,8 @@ builder.Services.AddValidators();
 
 var app = builder.Build();
 
+app.UseExceptionHandler("/error");
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -19,6 +20,5 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-//app.UseMiddleware<ExceptionLoggerMiddleware>();
 app.MapApiEndpoints();
 app.Run();
