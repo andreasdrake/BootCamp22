@@ -1,4 +1,5 @@
 using HackerService.Api;
+using HackerService.Krypto;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddSingleton<IKrypto,Krypto>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -21,8 +22,3 @@ app.UseHttpsRedirection();
 app.MapApiEndpoints();
 
 app.Run();
-
-internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
