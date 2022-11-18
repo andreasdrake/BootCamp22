@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.Api", "Hacker
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.Krypto", "HackerService.Krypto\HackerService.Krypto.csproj", "{8928CFFB-8543-48E8-A805-409D763B2CD3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.Api.Tests", "HackerService.Api.Tests\HackerService.Api.Tests.csproj", "{168639A3-3195-4E5A-8173-CFCDED9CA830}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E5E10CB1-40AF-4606-AF81-A7C60498AF51}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{018BF732-3E03-4F19-975D-B64028AA2B77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +27,18 @@ Global
 		{8928CFFB-8543-48E8-A805-409D763B2CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8928CFFB-8543-48E8-A805-409D763B2CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8928CFFB-8543-48E8-A805-409D763B2CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{168639A3-3195-4E5A-8173-CFCDED9CA830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168639A3-3195-4E5A-8173-CFCDED9CA830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168639A3-3195-4E5A-8173-CFCDED9CA830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168639A3-3195-4E5A-8173-CFCDED9CA830}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2BA07335-53A5-486F-93ED-EF07B357076D} = {E5E10CB1-40AF-4606-AF81-A7C60498AF51}
+		{8928CFFB-8543-48E8-A805-409D763B2CD3} = {E5E10CB1-40AF-4606-AF81-A7C60498AF51}
+		{168639A3-3195-4E5A-8173-CFCDED9CA830} = {018BF732-3E03-4F19-975D-B64028AA2B77}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DF079A33-FAD2-491B-A202-4DDD0D1A72F8}
