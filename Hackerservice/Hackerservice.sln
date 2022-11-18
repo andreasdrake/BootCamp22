@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.Api", "HackerService.Api\HackerService.Api.csproj", "{2BA07335-53A5-486F-93ED-EF07B357076D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerService.Api", "HackerService.Api\HackerService.Api.csproj", "{2BA07335-53A5-486F-93ED-EF07B357076D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.Krypto", "HackerService.Krypto\HackerService.Krypto.csproj", "{8928CFFB-8543-48E8-A805-409D763B2CD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerService.Krypto", "HackerService.Krypto\HackerService.Krypto.csproj", "{8928CFFB-8543-48E8-A805-409D763B2CD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.UnitTests", "HackerService.UnitTests\HackerService.UnitTests.csproj", "{A02CAA99-D96D-4DAD-BA03-284F813DDF93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8928CFFB-8543-48E8-A805-409D763B2CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8928CFFB-8543-48E8-A805-409D763B2CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8928CFFB-8543-48E8-A805-409D763B2CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02CAA99-D96D-4DAD-BA03-284F813DDF93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02CAA99-D96D-4DAD-BA03-284F813DDF93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02CAA99-D96D-4DAD-BA03-284F813DDF93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02CAA99-D96D-4DAD-BA03-284F813DDF93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
