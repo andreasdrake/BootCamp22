@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.Api", "HackerService.Api\HackerService.Api.csproj", "{2BA07335-53A5-486F-93ED-EF07B357076D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerService.Api", "HackerService.Api\HackerService.Api.csproj", "{2BA07335-53A5-486F-93ED-EF07B357076D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.Krypto", "HackerService.Krypto\HackerService.Krypto.csproj", "{8928CFFB-8543-48E8-A805-409D763B2CD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerService.Krypto", "HackerService.Krypto\HackerService.Krypto.csproj", "{8928CFFB-8543-48E8-A805-409D763B2CD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerService.Api.Tests", "HackerService.Api.Tests\HackerService.Api.Tests.csproj", "{168639A3-3195-4E5A-8173-CFCDED9CA830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerService.Api.Tests", "HackerService.Api.Tests\HackerService.Api.Tests.csproj", "{168639A3-3195-4E5A-8173-CFCDED9CA830}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E5E10CB1-40AF-4606-AF81-A7C60498AF51}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{018BF732-3E03-4F19-975D-B64028AA2B77}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerService.UnitTests", "HackerService.UnitTests\HackerService.UnitTests.csproj", "{939C21C1-3658-421F-A9A1-7C2E0E0B92DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerService.Krypto.Tests", "HackerService.UnitTests\HackerService.Krypto.Tests.csproj", "{939C21C1-3658-421F-A9A1-7C2E0E0B92DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
