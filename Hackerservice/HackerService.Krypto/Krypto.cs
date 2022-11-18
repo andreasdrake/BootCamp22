@@ -1,15 +1,19 @@
-﻿namespace HackerService.Krypto
+﻿using System.Text;
+
+namespace HackerService.Krypto
 {
     public class Krypto : IKrypto
     {
         public string Decrypt(string value)
         {
-            throw new NotImplementedException();
+            var textBytes = Encoding.UTF8.GetBytes(value);
+            return Convert.ToBase64String(textBytes, Base64FormattingOptions.InsertLineBreaks);
         }
 
         public string Encrypt(string value)
         {
-            throw new NotImplementedException();
+            var base64EncodedBytes = Convert.FromBase64String(value);
+            return Encoding.UTF8.GetString(base64EncodedBytes);
         }
     }
 }
